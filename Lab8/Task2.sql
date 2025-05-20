@@ -5,9 +5,7 @@ minimum of three values.
 SET SERVEROUTPUT ON;
 -- Function definition
 CREATE OR REPLACE FUNCTION min_of_three(val1 IN NUMBER, val2 IN NUMBER, val3 IN NUMBER)
-RETURN NUMBER
-IS
-    min_value NUMBER;
+RETURN NUMBER IS min_value NUMBER;
 BEGIN
     -- Initialize min_value with the first value
     min_value := val1;
